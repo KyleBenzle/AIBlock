@@ -1,0 +1,33 @@
+{
+  "name": "slop-blocker",
+  "description": "Detects and hides AI-generated content on webpages.",
+  "version": "0.2.7",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "compile": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/chrome": "^0.3.6",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@wxt-dev/module-react": "^1.2.2",
+    "jsdom": "^29.1.1",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5",
+    "wxt": "^0.21.4"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  }
+}
